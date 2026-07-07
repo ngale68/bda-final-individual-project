@@ -59,6 +59,8 @@ This creates:
 
 ## Submitted files
 
+- [data/clean/clean_market_data.csv](data/clean/clean_market_data.csv)
+- [data/clean/cleaned_market_data.csv](data/clean/cleaned_market_data.csv)
 - [reports/report_to_stelios.md](reports/report_to_stelios.md)
 - [reports/reflection.md](reports/reflection.md)
 - [results/runtime_comparison.csv](results/runtime_comparison.csv)
@@ -67,6 +69,5 @@ This creates:
 - [results/data_quality_report.txt](results/data_quality_report.txt)
 - [scripts/part1_build_dataset.py](scripts/part1_build_dataset.py)
 - [scripts/part2_clean_with_pandas.py](scripts/part2_clean_with_pandas.py)
-- [scripts/run_spark_analytics.py](scripts/run_spark_analytics.py)
 - [scripts/part3_spark_analytics.ipynb](scripts/part3_spark_analytics.ipynb)
 

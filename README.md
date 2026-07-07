@@ -1,38 +1,72 @@
 # Big Data Analytics Final Project
 
-## Your First Week at Owl Analytics
+## Overview
 
-This repository contains the final project brief and starter folder structure.
+This repository contains my completed final project for Owl Analytics. The work covers the full data pipeline for a cryptocurrency market-monitoring task: collecting market data from the Binance API, cleaning a deliberately messy dataset, and running full-dataset analytics with Spark.
 
-Start here:
+My name: Nga Le
 
-1. [Welcome](01_Welcome.md)
-2. [Team 1: Data Collection](02_Team1_Data_Collection.md)
-3. [Team 2: Data Quality](03_Team2_Data_Quality.md)
-4. [Team 3: Analytics](04_Team3_Analytics.md)
-5. [Report and Reflection](05_Report_and_Reflection.md)
-6. [Submission Guidelines](06_Submission_Guidelines.md)
-7. [Rubric](07_Rubric.md)
+Repository link: https://github.com/ngale68/bda-final-individual-project
 
-## Starter Structure
+## Company scenario
 
-The repository includes folders for the files you will generate:
+Owl Analytics wants to understand which cryptocurrency symbols are most active, which are most volatile, and when trading activity is highest. The project was built to show how a data pipeline can move from raw API data to a cleaned dataset and then to a usable analytics summary.
 
-```txt
-data/clean/
-data/messy/
-results/
-reports/
+## How to run the project
+
+### Team 1: Data collection
+
+Run the downloader from the repository root:
+
+```bash
+python scripts/part1_build_dataset.py
 ```
 
-Your datasets, logs, notebooks, reports, and result files should be created by your own code during the project. Do not commit a `.venv/` folder.
+This script creates:
+- data/clean/clean_market_data.csv
+- results/api_download.log
+- results/runtime_comparison.csv
 
-### Provided Scripts
+### Team 2: Data quality
 
-The `scripts/` folder already contains small helper scripts:
+First create the messy input file, then run the pandas cleaning script:
 
-- `get_one_record.py`: tests the Binance API by downloading one `BTCUSDT` record.
-- `save_dictionary_to_csv.py`: shows how to save one Python dictionary as a CSV row.
-- `mess_my_data.py`: creates the messy dataset for Team 2 after you complete Team 1.
+```bash
+python scripts/mess_my_data.py --input data/clean/clean_market_data.csv --output data/messy/messy_market_data.csv
+python scripts/part2_clean_with_pandas.py
+```
 
-Run the first two scripts before building `part1_build_dataset.py`. Run `mess_my_data.py` only after you have created `data/clean/clean_market_data.csv`.
+This creates:
+- data/messy/messy_market_data.csv
+- data/clean/cleaned_market_data.csv
+- results/pandas_sample_results.csv
+- results/data_quality_report.txt
+
+### Team 3: Spark analytics
+
+The full Spark analysis is available in the notebook:
+- scripts/part3_spark_analytics.ipynb
+
+This file is a download from Google Colab. 
+
+This creates:
+- results/spark_market_summary.csv
+
+## Final report and reflection
+
+- Report to Stelios: [reports/report_to_stelios.md](reports/report_to_stelios.md)
+- Reflection: [reports/reflection.md](reports/reflection.md)
+
+## Submitted files
+
+- [reports/report_to_stelios.md](reports/report_to_stelios.md)
+- [reports/reflection.md](reports/reflection.md)
+- [results/runtime_comparison.csv](results/runtime_comparison.csv)
+- [results/pandas_sample_results.csv](results/pandas_sample_results.csv)
+- [results/spark_market_summary.csv](results/spark_market_summary.csv)
+- [results/data_quality_report.txt](results/data_quality_report.txt)
+- [scripts/part1_build_dataset.py](scripts/part1_build_dataset.py)
+- [scripts/part2_clean_with_pandas.py](scripts/part2_clean_with_pandas.py)
+- [scripts/run_spark_analytics.py](scripts/run_spark_analytics.py)
+- [scripts/part3_spark_analytics.ipynb](scripts/part3_spark_analytics.ipynb)
+

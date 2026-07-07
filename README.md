@@ -61,6 +61,7 @@ This creates:
 
 - [data/clean/clean_market_data.csv](data/clean/clean_market_data.csv)
 - [data/clean/cleaned_market_data.csv](data/clean/cleaned_market_data.csv)
+- [data/messy/messy_market_data.csv](data/messy/messy_market_data.csv)
 - [reports/report_to_stelios.md](reports/report_to_stelios.md)
 - [reports/reflection.md](reports/reflection.md)
 - [results/runtime_comparison.csv](results/runtime_comparison.csv)

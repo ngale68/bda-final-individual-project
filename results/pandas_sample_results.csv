@@ -1,0 +1,26 @@
+metric,value
+Sample rows used,50
+Symbols included,10
+Records per symbol (target),5
+Questions answered,"average_close, highest_avg_volume, candle_direction_counts, largest_price_range_row"
+-- average close by symbol --,
+avg_close_ADAUSDT,0.219280
+avg_close_AVAXUSDT,6.846000
+avg_close_BNBUSDT,604.650000
+avg_close_BTCUSDT,66690.432000
+avg_close_DOGEUSDT,0.089230
+avg_close_DOTUSDT,0.912000
+avg_close_ETHUSDT,1823.116000
+avg_close_LINKUSDT,7.746200
+avg_close_SOLUSDT,72.942500
+avg_close_XRPUSDT,1.206200
+-- highest average volume --,
+highest_avg_volume,DOGEUSDT
+-- candle direction counts --,
+candle_up,27
+candle_down,22
+candle_nan,1
+-- largest price range row --,
+symbol,BTCUSDT
+open_time,2026-06-29 00:00:00+00:00
+price_range,699.989999999998

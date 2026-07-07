@@ -1,0 +1,14 @@
+Data-quality report
+Rows before cleaning: 9991
+Rows after cleaning: 9628
+Missing values before (per column):
+{'symbol': 0, 'interval': 0, 'open_time': 53, 'open': 44, 'high': 69, 'low': 58, 'close': 44, 'volume': 52, 'close_time': 53, 'quote_volume': 65, 'trade_count': 54}
+Missing values after (per column):
+{'symbol': 0, 'interval': 0, 'open_time': 206, 'open': 95, 'high': 121, 'low': 111, 'close': 97, 'volume': 118, 'close_time': 196, 'quote_volume': 125, 'trade_count': 111, 'open_time__orig': 52, 'close_time__orig': 52, 'price_range': 231, 'price_change': 191, 'percent_change': 191, 'candle_direction': 191}
+Duplicate rows before: 214
+Duplicate rows after: 0
+Invalid numeric rows removed: 149
+Negative volume rows: 149
+Negative trade_count rows: 0
+Rows where high < low: 0
+Cleaning decision: removed rows with negative volume/trade_count or high < low; converted numeric and timestamp columns using safe coercion; deduplicated rows; cleaned symbol formatting.

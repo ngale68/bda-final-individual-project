@@ -1,0 +1,21 @@
+2026-07-05T06:14:38Z | START request symbol=BTCUSDT interval=1h limit=1000
+2026-07-05T06:14:38Z | START request symbol=ETHUSDT interval=1h limit=1000
+2026-07-05T06:14:38Z | START request symbol=BNBUSDT interval=1h limit=1000
+2026-07-05T06:14:38Z | START request symbol=SOLUSDT interval=1h limit=1000
+2026-07-05T06:14:38Z | START request symbol=XRPUSDT interval=1h limit=1000
+2026-07-05T06:14:38Z | START request symbol=ADAUSDT interval=1h limit=1000
+2026-07-05T06:14:38Z | START request symbol=DOGEUSDT interval=1h limit=1000
+2026-07-05T06:14:38Z | START request symbol=AVAXUSDT interval=1h limit=1000
+2026-07-05T06:14:38Z | START request symbol=LINKUSDT interval=1h limit=1000
+2026-07-05T06:14:38Z | START request symbol=DOTUSDT interval=1h limit=1000
+2026-07-05T06:14:40Z | END request symbol=ETHUSDT records=1000
+2026-07-05T06:14:40Z | END request symbol=BTCUSDT records=1000
+2026-07-05T06:14:40Z | END request symbol=DOGEUSDT records=1000
+2026-07-05T06:14:40Z | END request symbol=DOTUSDT records=1000
+2026-07-05T06:14:40Z | END request symbol=XRPUSDT records=1000
+2026-07-05T06:14:40Z | END request symbol=BNBUSDT records=1000
+2026-07-05T06:14:40Z | END request symbol=AVAXUSDT records=1000
+2026-07-05T06:14:40Z | END request symbol=ADAUSDT records=1000
+2026-07-05T06:14:40Z | END request symbol=SOLUSDT records=1000
+2026-07-05T06:14:40Z | END request symbol=LINKUSDT records=1000
+2026-07-05T06:14:40Z | WROTE csv=data/clean/clean_market_data.csv records=10000
